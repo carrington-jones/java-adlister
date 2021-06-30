@@ -17,7 +17,7 @@ public class CounterServlet extends HttpServlet {
         resp.setContentType("text/html");
         PrintWriter out = resp.getWriter();
 
-        if(req.getParameter("reset") != null)
+        if(req.getParameter("reset") != null) //!=null needed because if statement is expecting boolean. Without !=null it would return string.
             countViews = 0;
         else
             countViews += 1;

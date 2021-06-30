@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 
-@WebServlet(name="HelloWorldServlet", urlPatterns = "/hello-world")
+@WebServlet(name="HelloWorldServlet", urlPatterns = "/hello")
 public class HelloWorldServlet extends HttpServlet {
 
     @Override
