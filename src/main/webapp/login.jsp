@@ -13,11 +13,11 @@
 <html>
 <head>
     <title>Login</title>
-    <%@include file="partials/head.jsp" %>
+    <%@include file="../partials/head.jsp" %>
 </head>
 <body>
 
-<%@include file="partials/navbar.jsp" %>
+<%@include file="../partials/navbar.jsp" %>
 
 <form action="/login.jsp" method="POST">
     <label for="username">Username:</label><br>
