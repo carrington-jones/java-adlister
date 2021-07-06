@@ -5,7 +5,7 @@
     <title>Guess JSP </title>
 </head>
 <body>
-<h1>Please Guess a Number!</h1>
+<h1>Please Guess a Number 1, 2 or 3!</h1>
 <form action="/guess" method="POST">
     <label for="guess">Number</label>
     <input id="guess" name="guess" type="number" min="1" max="3" >
