@@ -12,7 +12,7 @@ public class AdsServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         List<Ad> listings = DaoFactory.getAdsDao().all();
-        req.setAttribute("ads",listings);
+        req.setAttribute("ads", listings);
 
         req.getRequestDispatcher("/ads/index.jsp").forward(req,resp);
     }

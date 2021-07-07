@@ -3,6 +3,7 @@
 <html>
 <head>
     <title> </title>
+    <%@include file="/partials/head.jsp"%>
 </head>
 <body>
 <form>

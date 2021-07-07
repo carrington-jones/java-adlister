@@ -15,12 +15,12 @@ public class LoginServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        if (req.getMethod().equalsIgnoreCase("post")) {
-            String username = req.getParameter("username");
-            String password = req.getParameter("password");
-            if (username.equals("admin") && password.equals("password")) {
-                resp.sendRedirect("/profile");
-            }
+
+        String username = req.getParameter("username");
+        String password = req.getParameter("password");
+        if (username.equals("admin") && password.equals("password")) {
+            resp.sendRedirect("/profile");
         }
+
     }
 }
