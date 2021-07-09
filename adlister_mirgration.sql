@@ -19,5 +19,5 @@ CREATE TABLE ads
     title       VARCHAR(100) NOT NULL,
     description TEXT NOT NULL,
     PRIMARY KEY (id),
-    FOREIGN KEY (user_id) REFERENCES users (id) ON DELETE CASCADE
+    FOREIGN KEY (user_id) REFERENCES users (id)
 );
